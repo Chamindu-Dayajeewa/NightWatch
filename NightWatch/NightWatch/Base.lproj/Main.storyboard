@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="17A306f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="homeView" title="Home View" id="BYZ-38-t0r" customClass="ViewController" customModule="NightWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JTd-8u-phW">
+                                <rect key="frame" x="22" y="37" width="330" height="302"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iy5-QT-ETh">
+                                <rect key="frame" x="22" y="367" width="330" height="64"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lV-jt-ZTO">
+                                <rect key="frame" x="22" y="463" width="155" height="64"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Eh2-6n-nBf"/>
+                                    <constraint firstAttribute="width" constant="155" id="Ryx-h8-Nzt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbl-Wo-vug">
+                                <rect key="frame" x="197" y="463" width="155" height="64"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhE-IG-csT">
+                                <rect key="frame" x="22" y="546" width="202" height="101"/>
+                                <color key="backgroundColor" red="0.24359533629441621" green="0.24359533629441621" blue="0.24359533629441621" alpha="0.59936857876712324" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Dial 000">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dialEmergency:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSr-8d-rxk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nzy-Hs-wFh">
+                                <rect key="frame" x="249" y="551" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="hJm-Ym-0oJ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="navigation"/>
+                                <connections>
+                                    <action selector="dialEmergency:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ajn-Zb-9hM"/>
+                                    <action selector="getDirectionsHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJA-kq-JEE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nzy-Hs-wFh" firstAttribute="centerY" secondItem="BhE-IG-csT" secondAttribute="centerY" id="2BC-iD-KdR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nzy-Hs-wFh" secondAttribute="trailing" constant="20" id="41U-9P-ayQ"/>
+                            <constraint firstItem="iy5-QT-ETh" firstAttribute="top" secondItem="JTd-8u-phW" secondAttribute="bottom" constant="28" id="9hV-sR-3j5"/>
+                            <constraint firstItem="8lV-jt-ZTO" firstAttribute="leading" secondItem="iy5-QT-ETh" secondAttribute="leading" id="Eyu-ot-llH"/>
+                            <constraint firstItem="iy5-QT-ETh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J7o-CN-zlx"/>
+                            <constraint firstItem="JTd-8u-phW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mop-Dq-nXa"/>
+                            <constraint firstItem="mbl-Wo-vug" firstAttribute="trailing" secondItem="iy5-QT-ETh" secondAttribute="trailing" id="NoR-qW-Q6f"/>
+                            <constraint firstItem="8lV-jt-ZTO" firstAttribute="top" secondItem="iy5-QT-ETh" secondAttribute="bottom" constant="32" id="PfV-7F-MOR"/>
+                            <constraint firstAttribute="bottom" secondItem="BhE-IG-csT" secondAttribute="bottom" constant="20" symbolic="YES" id="S56-KZ-jqP"/>
+                            <constraint firstItem="Nzy-Hs-wFh" firstAttribute="top" secondItem="mbl-Wo-vug" secondAttribute="bottom" constant="24" id="Tse-Mc-Puk"/>
+                            <constraint firstItem="8lV-jt-ZTO" firstAttribute="top" secondItem="mbl-Wo-vug" secondAttribute="top" id="XOL-lK-sig"/>
+                            <constraint firstItem="JTd-8u-phW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="fdr-tS-frt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iy5-QT-ETh" secondAttribute="bottom" constant="236" id="fiS-Ci-sap"/>
+                            <constraint firstItem="8lV-jt-ZTO" firstAttribute="bottom" secondItem="mbl-Wo-vug" secondAttribute="bottom" id="kaM-kk-6Uq"/>
+                            <constraint firstItem="Nzy-Hs-wFh" firstAttribute="leading" secondItem="BhE-IG-csT" secondAttribute="trailing" constant="25" id="lAt-yd-saS"/>
+                            <constraint firstItem="JTd-8u-phW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="n2h-kK-PcT"/>
+                            <constraint firstItem="BhE-IG-csT" firstAttribute="top" secondItem="mbl-Wo-vug" secondAttribute="bottom" constant="19" id="nBM-XA-z57"/>
+                            <constraint firstItem="BhE-IG-csT" firstAttribute="leading" secondItem="8lV-jt-ZTO" secondAttribute="leading" id="p3u-iX-jYX"/>
+                            <constraint firstItem="iy5-QT-ETh" firstAttribute="leading" secondItem="JTd-8u-phW" secondAttribute="leading" id="qLO-G5-aJV"/>
+                            <constraint firstItem="mbl-Wo-vug" firstAttribute="leading" secondItem="8lV-jt-ZTO" secondAttribute="trailing" constant="20" id="uhx-Yr-isp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JTd-8u-phW" secondAttribute="bottom" constant="328" id="vwv-xs-KAQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dialButton" destination="BhE-IG-csT" id="aig-Xs-EX7"/>
+                        <outlet property="directionsButton" destination="Nzy-Hs-wFh" id="53e-Zg-sGD"/>
+                        <outlet property="mapView" destination="JTd-8u-phW" id="JBV-VW-rOj"/>
+                        <outlet property="occurrenceLabel" destination="mbl-Wo-vug" id="rfC-qO-ODK"/>
+                        <outlet property="ratingLabel" destination="8lV-jt-ZTO" id="q4s-yZ-lbI"/>
+                        <outlet property="riskLabel" destination="iy5-QT-ETh" id="f9I-c6-hAR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272.80000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navigation" width="128" height="128"/>
+    </resources>
+</document>

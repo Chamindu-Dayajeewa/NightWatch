@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54DDD3E51F2BFEB4001F3DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD3E41F2BFEB4001F3DA7 /* AppDelegate.swift */; };
+		54DDD3E71F2BFEB4001F3DA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD3E61F2BFEB4001F3DA7 /* ViewController.swift */; };
+		54DDD3EA1F2BFEB4001F3DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DDD3E81F2BFEB4001F3DA7 /* Main.storyboard */; };
+		54DDD3EC1F2BFEB4001F3DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54DDD3EB1F2BFEB4001F3DA7 /* Assets.xcassets */; };
+		54DDD3EF1F2BFEB4001F3DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DDD3ED1F2BFEB4001F3DA7 /* LaunchScreen.storyboard */; };
+		54DDD3FA1F2BFEB4001F3DA7 /* NightWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD3F91F2BFEB4001F3DA7 /* NightWatchTests.swift */; };
+		54DDD4051F2BFEB4001F3DA7 /* NightWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD4041F2BFEB4001F3DA7 /* NightWatchUITests.swift */; };
+		54DDD4171F2C2586001F3DA7 /* crime_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 54DDD4161F2C2586001F3DA7 /* crime_data.json */; };
+		54DDD41A1F2C363B001F3DA7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DDD4191F2C363B001F3DA7 /* MapKit.framework */; };
+		54DDD41C1F2C3644001F3DA7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DDD41B1F2C3644001F3DA7 /* CoreLocation.framework */; };
+		54DDD4221F2CB360001F3DA7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DDD4211F2CB360001F3DA7 /* UserNotifications.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54DDD3F61F2BFEB4001F3DA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54DDD3D91F2BFEB3001F3DA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54DDD3E01F2BFEB3001F3DA7;
+			remoteInfo = NightWatch;
+		};
+		54DDD4011F2BFEB4001F3DA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54DDD3D91F2BFEB3001F3DA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54DDD3E01F2BFEB3001F3DA7;
+			remoteInfo = NightWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5433E7E51F2D771C0091902D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		5433E7E71F2D82AC0091902D /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		54DDD3E11F2BFEB3001F3DA7 /* NightWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DDD3E41F2BFEB4001F3DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54DDD3E61F2BFEB4001F3DA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54DDD3E91F2BFEB4001F3DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54DDD3EB1F2BFEB4001F3DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54DDD3EE1F2BFEB4001F3DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54DDD3F01F2BFEB4001F3DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DDD3F51F2BFEB4001F3DA7 /* NightWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DDD3F91F2BFEB4001F3DA7 /* NightWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightWatchTests.swift; sourceTree = "<group>"; };
+		54DDD3FB1F2BFEB4001F3DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DDD4001F2BFEB4001F3DA7 /* NightWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DDD4041F2BFEB4001F3DA7 /* NightWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightWatchUITests.swift; sourceTree = "<group>"; };
+		54DDD4061F2BFEB4001F3DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DDD4161F2C2586001F3DA7 /* crime_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = crime_data.json; path = "../../../../Other/Competitions/GovHack 2017/Data Sets/crime_data/crime_data.json"; sourceTree = "<group>"; };
+		54DDD4191F2C363B001F3DA7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		54DDD41B1F2C3644001F3DA7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		54DDD4211F2CB360001F3DA7 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54DDD3DE1F2BFEB3001F3DA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DDD4221F2CB360001F3DA7 /* UserNotifications.framework in Frameworks */,
+				54DDD41C1F2C3644001F3DA7 /* CoreLocation.framework in Frameworks */,
+				54DDD41A1F2C363B001F3DA7 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DDD3F21F2BFEB4001F3DA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DDD3FD1F2BFEB4001F3DA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54DDD3D81F2BFEB3001F3DA7 = {
+			isa = PBXGroup;
+			children = (
+				54DDD3E31F2BFEB3001F3DA7 /* NightWatch */,
+				54DDD3F81F2BFEB4001F3DA7 /* NightWatchTests */,
+				54DDD4031F2BFEB4001F3DA7 /* NightWatchUITests */,
+				54DDD3E21F2BFEB3001F3DA7 /* Products */,
+				54DDD4181F2C363B001F3DA7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		54DDD3E21F2BFEB3001F3DA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54DDD3E11F2BFEB3001F3DA7 /* NightWatch.app */,
+				54DDD3F51F2BFEB4001F3DA7 /* NightWatchTests.xctest */,
+				54DDD4001F2BFEB4001F3DA7 /* NightWatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54DDD3E31F2BFEB3001F3DA7 /* NightWatch */ = {
+			isa = PBXGroup;
+			children = (
+				54DDD3E41F2BFEB4001F3DA7 /* AppDelegate.swift */,
+				54DDD3E61F2BFEB4001F3DA7 /* ViewController.swift */,
+				54DDD4161F2C2586001F3DA7 /* crime_data.json */,
+				54DDD3E81F2BFEB4001F3DA7 /* Main.storyboard */,
+				54DDD3EB1F2BFEB4001F3DA7 /* Assets.xcassets */,
+				54DDD3ED1F2BFEB4001F3DA7 /* LaunchScreen.storyboard */,
+				54DDD3F01F2BFEB4001F3DA7 /* Info.plist */,
+			);
+			path = NightWatch;
+			sourceTree = "<group>";
+		};
+		54DDD3F81F2BFEB4001F3DA7 /* NightWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				54DDD3F91F2BFEB4001F3DA7 /* NightWatchTests.swift */,
+				54DDD3FB1F2BFEB4001F3DA7 /* Info.plist */,
+			);
+			path = NightWatchTests;
+			sourceTree = "<group>";
+		};
+		54DDD4031F2BFEB4001F3DA7 /* NightWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54DDD4041F2BFEB4001F3DA7 /* NightWatchUITests.swift */,
+				54DDD4061F2BFEB4001F3DA7 /* Info.plist */,
+			);
+			path = NightWatchUITests;
+			sourceTree = "<group>";
+		};
+		54DDD4181F2C363B001F3DA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5433E7E71F2D82AC0091902D /* UserNotificationsUI.framework */,
+				5433E7E51F2D771C0091902D /* NotificationCenter.framework */,
+				54DDD4211F2CB360001F3DA7 /* UserNotifications.framework */,
+				54DDD41B1F2C3644001F3DA7 /* CoreLocation.framework */,
+				54DDD4191F2C363B001F3DA7 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54DDD3E01F2BFEB3001F3DA7 /* NightWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54DDD4091F2BFEB4001F3DA7 /* Build configuration list for PBXNativeTarget "NightWatch" */;
+			buildPhases = (
+				54DDD3DD1F2BFEB3001F3DA7 /* Sources */,
+				54DDD3DE1F2BFEB3001F3DA7 /* Frameworks */,
+				54DDD3DF1F2BFEB3001F3DA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NightWatch;
+			productName = NightWatch;
+			productReference = 54DDD3E11F2BFEB3001F3DA7 /* NightWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54DDD3F41F2BFEB4001F3DA7 /* NightWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54DDD40C1F2BFEB4001F3DA7 /* Build configuration list for PBXNativeTarget "NightWatchTests" */;
+			buildPhases = (
+				54DDD3F11F2BFEB4001F3DA7 /* Sources */,
+				54DDD3F21F2BFEB4001F3DA7 /* Frameworks */,
+				54DDD3F31F2BFEB4001F3DA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54DDD3F71F2BFEB4001F3DA7 /* PBXTargetDependency */,
+			);
+			name = NightWatchTests;
+			productName = NightWatchTests;
+			productReference = 54DDD3F51F2BFEB4001F3DA7 /* NightWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54DDD3FF1F2BFEB4001F3DA7 /* NightWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54DDD40F1F2BFEB4001F3DA7 /* Build configuration list for PBXNativeTarget "NightWatchUITests" */;
+			buildPhases = (
+				54DDD3FC1F2BFEB4001F3DA7 /* Sources */,
+				54DDD3FD1F2BFEB4001F3DA7 /* Frameworks */,
+				54DDD3FE1F2BFEB4001F3DA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54DDD4021F2BFEB4001F3DA7 /* PBXTargetDependency */,
+			);
+			name = NightWatchUITests;
+			productName = NightWatchUITests;
+			productReference = 54DDD4001F2BFEB4001F3DA7 /* NightWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54DDD3D91F2BFEB3001F3DA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Chamindu Dayajeewa";
+				TargetAttributes = {
+					54DDD3E01F2BFEB3001F3DA7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UL5GZT9FU8;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					54DDD3F41F2BFEB4001F3DA7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 54DDD3E01F2BFEB3001F3DA7;
+					};
+					54DDD3FF1F2BFEB4001F3DA7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 54DDD3E01F2BFEB3001F3DA7;
+					};
+				};
+			};
+			buildConfigurationList = 54DDD3DC1F2BFEB3001F3DA7 /* Build configuration list for PBXProject "NightWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54DDD3D81F2BFEB3001F3DA7;
+			productRefGroup = 54DDD3E21F2BFEB3001F3DA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54DDD3E01F2BFEB3001F3DA7 /* NightWatch */,
+				54DDD3F41F2BFEB4001F3DA7 /* NightWatchTests */,
+				54DDD3FF1F2BFEB4001F3DA7 /* NightWatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54DDD3DF1F2BFEB3001F3DA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DDD4171F2C2586001F3DA7 /* crime_data.json in Resources */,
+				54DDD3EF1F2BFEB4001F3DA7 /* LaunchScreen.storyboard in Resources */,
+				54DDD3EC1F2BFEB4001F3DA7 /* Assets.xcassets in Resources */,
+				54DDD3EA1F2BFEB4001F3DA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DDD3F31F2BFEB4001F3DA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DDD3FE1F2BFEB4001F3DA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54DDD3DD1F2BFEB3001F3DA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DDD3E71F2BFEB4001F3DA7 /* ViewController.swift in Sources */,
+				54DDD3E51F2BFEB4001F3DA7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DDD3F11F2BFEB4001F3DA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DDD3FA1F2BFEB4001F3DA7 /* NightWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DDD3FC1F2BFEB4001F3DA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DDD4051F2BFEB4001F3DA7 /* NightWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54DDD3F71F2BFEB4001F3DA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54DDD3E01F2BFEB3001F3DA7 /* NightWatch */;
+			targetProxy = 54DDD3F61F2BFEB4001F3DA7 /* PBXContainerItemProxy */;
+		};
+		54DDD4021F2BFEB4001F3DA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54DDD3E01F2BFEB3001F3DA7 /* NightWatch */;
+			targetProxy = 54DDD4011F2BFEB4001F3DA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54DDD3E81F2BFEB4001F3DA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54DDD3E91F2BFEB4001F3DA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54DDD3ED1F2BFEB4001F3DA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54DDD3EE1F2BFEB4001F3DA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54DDD4071F2BFEB4001F3DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54DDD4081F2BFEB4001F3DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54DDD40A1F2BFEB4001F3DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UL5GZT9FU8;
+				INFOPLIST_FILE = NightWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NightWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		54DDD40B1F2BFEB4001F3DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UL5GZT9FU8;
+				INFOPLIST_FILE = NightWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NightWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		54DDD40D1F2BFEB4001F3DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NightWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NightWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NightWatch.app/NightWatch";
+			};
+			name = Debug;
+		};
+		54DDD40E1F2BFEB4001F3DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NightWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NightWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NightWatch.app/NightWatch";
+			};
+			name = Release;
+		};
+		54DDD4101F2BFEB4001F3DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NightWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NightWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NightWatch;
+			};
+			name = Debug;
+		};
+		54DDD4111F2BFEB4001F3DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NightWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NightWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NightWatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54DDD3DC1F2BFEB3001F3DA7 /* Build configuration list for PBXProject "NightWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DDD4071F2BFEB4001F3DA7 /* Debug */,
+				54DDD4081F2BFEB4001F3DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54DDD4091F2BFEB4001F3DA7 /* Build configuration list for PBXNativeTarget "NightWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DDD40A1F2BFEB4001F3DA7 /* Debug */,
+				54DDD40B1F2BFEB4001F3DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54DDD40C1F2BFEB4001F3DA7 /* Build configuration list for PBXNativeTarget "NightWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DDD40D1F2BFEB4001F3DA7 /* Debug */,
+				54DDD40E1F2BFEB4001F3DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54DDD40F1F2BFEB4001F3DA7 /* Build configuration list for PBXNativeTarget "NightWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DDD4101F2BFEB4001F3DA7 /* Debug */,
+				54DDD4111F2BFEB4001F3DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54DDD3D91F2BFEB3001F3DA7 /* Project object */;
+}
